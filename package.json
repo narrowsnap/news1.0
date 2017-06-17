@@ -1,0 +1,27 @@
+{
+  "name": "search",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular-file-upload": "^2.5.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "~1.17.1",
+    "connect-mongo": "^1.3.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "^2.5.6",
+    "express": "~4.15.2",
+    "express-session": "^1.15.3",
+    "fs": "^0.0.1-security",
+    "jade": "~1.11.0",
+    "mongoose": "^4.10.6",
+    "morgan": "~1.8.1",
+    "ng-file-upload": "^12.2.13",
+    "path": "^0.12.7",
+    "serve-favicon": "~2.4.2"
+  }
+}

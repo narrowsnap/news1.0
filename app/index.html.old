@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tel Search</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/element/element.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="app.animations.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body class="background">
+<div class="container-fluid">
+    <div class="row top_search">
+        <div class="col-lg-1"></div>
+        <div class="search_nav col-lg-4">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="用户名" class="form-control">
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="密码" class="form-control">
+            </div>
+            <div style="text-align: center; margin-top: 1em">
+                <button id="login" class="btn btn-info" type="button">
+                    登录
+                </button>
+            </div>
+            <h2 id="message"></h2>
+        </div>
+        <div class="col-lg-7">
+        </div>
+    </div>
+</div>
+</body>
+</html>

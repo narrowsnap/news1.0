@@ -1,0 +1,18 @@
+<!--<div>Info: {{info}}</div>-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-6">
+            <!--Body content-->
+            <h3 style="text-align: center">{{item.title}}</h3>
+            <hr class="col-sm-10">
+            <img width="500em" height="400em" ng-src="{{item.img_url}}" alt="{{item.title}}" />
+            <p>发布人： {{item.create_user}}</p>
+            <div ng-bind-html="deliberatelyTrustDangerousSnippet()"></div>
+
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>

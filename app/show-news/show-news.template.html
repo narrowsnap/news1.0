@@ -1,0 +1,101 @@
+<style>
+  #divMain {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  nav {
+    position: relative;
+    width:100%;
+    height: 50px;
+  }
+  .pagination {
+    right: 0px;
+    position: absolute;
+    top: -30px;
+  }
+  nav li {
+    cursor: pointer;
+  }
+</style>
+<div class="row">
+  <div class="col-lg-11"></div>
+  <div class="col-lg-1">
+    <button class="btn btn-default" ng-if="!login" class="admin-login" type="button" ng-click="adminLogin()">管理员登录</button>
+    <button class="btn btn-default" ng-if="login" class="admin-login"  type="button" ng-click="management()">管理</button>
+  </div>
+</div>
+
+<!--<div class="container-fluid">
+    <div class="row">
+      <div  class="col-lg-1"></div>
+        <div class="col-lg-5 show_info">
+          <section class="row">
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-6">
+              &lt;!&ndash;<ul class="people" ng-repeat="item in items">
+                <li class="news-item">
+                  <img width="200" height="100" ng-src="{{item.img_url}}">
+                  <a href="#!/showDetail/{{item._id}}"><h3>{{item.title}}</h3></a>
+                  <p>{{item.tag}}</p>
+                </li>
+              </ul>&ndash;&gt;
+
+
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+          </section>
+        </div>
+      <div  class="col-lg-3">
+      </div>
+    </div>
+</div>-->
+<div class="container-fluid" style="margin-top: 3em">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <!--Body content-->
+
+      <ul class="people">
+        <li ng-repeat="item in items"
+            class="news-item">
+          <hr>
+          <a href="#!/showDetail/{{item._id}}" class="thumb">
+            <img class="news-img" width="170em" height="120em" ng-src="{{item.img_url}}" alt="{{item.title}}" />
+          </a>
+          <a href="#!/showDetail/{{item._id}}" class="news-title"><h3>{{item.title}}</h3></a>
+          <p class="news-tag">{{item.tag}}</p>
+        </li>
+      </ul>
+
+      <nav class="page-nav">
+        <ul class="pagination">
+          <li>
+            <a ng-click="Previous()">
+              <span>上一页</span>
+            </a>
+          </li>
+          <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >
+            <a ng-click="selectPage(page)" >{{ page }}</a>
+          </li>
+          <li>
+            <a ng-click="Next()">
+              <span>下一页</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
+<div>
+</div>
+

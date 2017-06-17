@@ -1,0 +1,223 @@
+body {
+  padding: 0px;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  /*background-color: #ccc;*/
+	/*background: url('img/ti219a7712.jpg');
+  background-size: 100%;*/
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+  margin-top: 0;
+}
+
+.background{
+  background: url('img/ti219a7712.jpg');
+  background-repeat: no-repeat;
+}
+
+/* View: Phone list */
+.people {
+  list-style: none;
+}
+
+.people li {
+  clear: both;
+  height: 50px;
+  padding-top: 1px;
+  padding-left: 1px;
+  position: relative;
+  left: -2em;
+}
+
+.thumb {
+  float: left;
+  height: 100px;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  width: 100px;
+}
+
+/* View: Phone detail */
+.person {
+  /*background-color: white;*/
+  display: none;
+  float: left;
+  height: 400px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  padding: 2em;
+  width: 400px;
+}
+
+.person:first-child {
+  display: block;
+}
+
+.person-images {
+  /*background-color: white;*/
+  float: left;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+}
+
+.person-thumbs {
+  list-style: none;
+  margin: 0;
+}
+
+.person-thumbs img {
+  height: 100px;
+  padding: 1em;
+  width: 100px;
+}
+
+.person-thumbs li {
+  /*background-color: white;*/
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em;
+}
+
+.specs {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.specs dt {
+  font-weight: bold;
+}
+
+.specs > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.specs > li > span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.search_nav{
+  height: 3em;
+}
+
+.result_num{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.input_style{
+  width: 20em;
+  height: 2.5em;
+  border-radius: 5px;
+}
+
+
+.search_pos{
+  height: 2em;
+  position: relative;
+  top: 10em;
+}
+
+.select_option{
+  height: 2em;
+  /*background-color: #ccc;*/
+  border-radius: 5px;
+}
+
+.show_style{
+  font-size: large;
+}
+
+.top_search{
+  width: 100%;
+  height: 8em;
+  padding-top: 2em;
+}
+
+.audio{
+  position: relative;
+  top: .3em;
+}
+
+.audio_span{
+  margin: auto auto 2em 2em;
+}
+
+.show_info{
+  margin-top: 2em;
+  margin-right: 1.5em;
+}
+
+.person_info{
+  margin-top: 1em;
+}
+.name_style{
+  display: inline-block;
+  width: 4em;
+}
+
+.all_info{
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+/*person-detail*/
+.head{
+  width: 100%;
+  height: 8em;
+  text-align: center;
+  padding-top: 2em;
+  /*margin-top: 1em;*/
+  /*margin-bottom: 4em;*/
+}
+
+.news-item{
+
+}
+
+.news-img{
+  position: relative;
+  left: 2em;
+}
+
+.news-title{
+  position: relative;
+  left: 10em;
+  /*text-align: center;*/
+}
+.news-tag{
+  position: relative;
+  left: 10em;
+  /*text-align: center;*/
+}
+
+.page-nav{
+  position: relative;
+  right: 5em;
+  top: 10em;
+}
+
+.admin-login{
+  position: relative;
+  left: 20em;
+  top: 1em;
+}
+
+.login{
+  margin-top: 5em;
+}
+
+.myTr >th{
+  text-align: center;
+}
+.myTr >td{
+  text-align: center;
+}
